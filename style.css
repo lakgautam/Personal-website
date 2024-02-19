@@ -1,0 +1,622 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    color: #eeeeee;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .section {
+    padding: 5rem 3rem;
+    border-top: 1px solid #eee;
+  }
+  
+  .section_title {
+    width: 80vw;
+    padding: 0 40px 0 40px;
+    margin: 0 auto 6rem auto;
+  }
+  
+  .section_title > h2 {
+    color: #130197;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', serif;;
+    font-size: 3rem;
+  }
+  
+  .section_title > h3 {
+    color: #757575;
+    font-size: 2.5rem;
+  }
+  
+  /* //////////////////////////////////////////////////////////////// */
+  /* NAVBAR */
+  
+  #navbar {
+    width: 100vw;
+    height: 5vh;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    min-height: 80px;
+    min-width: 100%;
+    background-color: #3c0364;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  #navbar img {
+    margin-right: 550px;
+  }
+  
+  #navbar li {
+    display: inline;
+    margin-right: 35px;
+  }
+  
+  #navbar li:last-child {
+    margin: 0;
+  }
+  
+  #navbar a:link {
+    font-size: 1.18rem;
+    text-decoration: none;
+    color: #eeeeee;
+  }
+  
+  #navbar a:hover {
+    transform: scale(1.2);
+    display: inline-block;
+  }
+  
+  #navbar a:visited,
+  a:active {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #eeeeee;
+  }
+  
+  #logo {
+    max-height: 100px;
+  }
+  
+  /* //////////////////////////////////////////////////////////////// */
+  /* HERO */
+  
+  #lakgautam {
+    height: 95vh;
+    min-height: 500px;
+    min-width: 100vw;
+    background-color:#bc9b9b;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 50px;
+    overflow: hidden;
+  }
+  
+  #text-section,
+  #img-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+  }
+  
+  #text-section p {
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+  }
+  
+  #img-section img {
+    opacity: 0.8;
+    border-radius: 50%;
+    border: 5px solid #e8d9ec;
+    max-width: 300px;
+    height: auto;
+  }
+  /* //////////////////////////////////////////////////////////////// */
+  /* ABOUT ME SECTION */
+  #about-me {
+    border: 0;
+  }
+  
+  .grid-container-me {
+    width: 80vw;
+    padding: 0 40px 0 40px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+  }
+  
+  #about-me .container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  
+  #about-me .text {
+    padding: 0 30px;
+    font-family: "Zilla Slab", serif;
+    font-size: 1.1rem;
+    letter-spacing: 2.2px;
+    color: #757575;
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid #1aacac;
+  }
+  
+  #about-me h4 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    color: #1aacac;
+  }
+  
+  #about-me img {
+    opacity: 0.8;
+    border-radius: 5px;
+    border: 2px solid #2e97a7;
+    height: 300px;
+    max-width: 200px;
+
+  }
+  
+  #about-me-img-3 {
+    height: 500px !important;
+  }
+  /* //////////////////////////////////////////////////////////////// */
+  /* SKILLS SECTION */
+  section {
+    color: #eeeeee;
+  }
+  
+  .grid-container {
+    width: 80vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 30px;
+  }
+  
+  .img-section,
+  .txt-section {
+    padding: 40px;
+  }
+  
+  .txt-section {
+    line-height: 30px;
+    letter-spacing: 2.2px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  
+  .txt-section > h4 {
+    color: #fff;
+    font-size: 2.8rem;
+    margin-bottom: 55px;
+  }
+  
+  .txt-section > p {
+    color: #757575;
+    font-family: "Zilla Slab", serif;
+    font-size: 1rem;
+  }
+  
+  .img-section > img {
+    height: 300px;
+    border: 2px solid #2e97a7;
+    border-radius: 5px;
+  }
+  
+  .highlight {
+    position: relative;
+  }
+  
+  .highlight::after {
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    transform: scale(1.07, 1.05) skewX(-15deg);
+    background-color: #1aacac;
+  }
+  
+  /* //////////////////////////////////////////////////////////////// */
+  /* EDUCATION SECTION */
+  #education {
+    width: 100vw;
+  }
+  
+  .flex-container-education {
+    width: 80vw;
+    padding: 0 40px 0 40px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 10rem;
+  }
+  
+  .school-card {
+    font-family: "Zilla Slab", serif;
+    color: #757575;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+  .school-card > img {
+    border-radius: 5px;
+    border: 2px solid #2e97a7;
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  .school-card > h4 {
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    color: #fff;
+  }
+  
+  .school-card > h5 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.07rem;
+  }
+  
+  .school-card li {
+    margin-bottom: 12px;
+  }
+  
+  .school-card li:last-child {
+    margin: 0;
+  }
+  
+  /* //////////////////////////////////////////////////////////////// */
+  /* CONTACT ME SECTION */
+  .container-contact {
+    width: 40vw;
+    padding: 0 40px 0 40px;
+    margin: 0 auto;
+    border: 5px solid #1aacac;
+    border-radius: 5px;
+    color: #757575;
+  }
+  
+  
+  
+  /* //////////////////////////////////////////////////////////////// */
+  /* FOOTER SECTION */
+  footer {
+    background-color: #696969;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer-container {
+    width: 60%;
+  }
+  
+  #socials-div {
+    padding: 20px 0px;
+    border-bottom: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+  }
+  
+  #copyright-div {
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  ion-icon {
+    color: white;
+  }
+  /* //////////////////////////////////////////////////////////////// */
+  /* MEDIA QUERIES */
+  @media (max-width: 1600px) {
+    .flex-container-education {
+      flex-wrap: wrap;
+    }
+  
+    .school-card {
+      width: 350px;
+    }
+  }
+  
+  @media (max-width: 1200px) {
+    #lakgautam {
+      width: 100vw;
+      height: 100%;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+  
+    #text-section {
+      text-align: center;
+    }
+  
+    #img-section {
+      order: -1;
+      margin-top: 100px;
+    }
+  
+    .flex-container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .card {
+      margin-right: 0;
+      margin-bottom: 60px;
+    }
+  
+    .grid-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .txt-one,
+    .txt-two,
+    .txt-three {
+      text-align: justify;
+    }
+  
+    .img-two {
+      order: 1;
+    }
+  
+    .txt-two {
+      order: 2;
+    }
+  
+    .img-three {
+      order: 3;
+    }
+  
+    .txt-three {
+      order: 4;
+    }
+  
+    .flex-container-education {
+      flex-direction: column;
+      align-items: center;
+      gap: 50px;
+    }
+  
+    .school-card {
+      max-width: 400px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #eee;
+      gap: 10px;
+    }
+  
+    .container-contact {
+      width: 80vw;
+    }
+  
+    .grid-container-me {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .text-one,
+    .text-two,
+    .text-three {
+      padding: 0 !important;
+      padding-bottom: 50px !important;
+      border-right: 0 !important;
+      border-bottom: 2px solid #1aacac;
+    }
+  
+    .grid-container-me > .two {
+      order: 1;
+    }
+  
+    .grid-container-me > .three {
+      order: 2;
+    }
+  
+    .grid-container-me > .text-two {
+      order: 1;
+    }
+    .grid-container-me > .text-three {
+      order: 2;
+    }
+  }
+  
+  @media (max-width: 1360px) {
+    .img-section > img {
+      max-width: 400px;
+    }
+  
+    .flex-container-education {
+      gap: 4rem;
+    }
+  }
+  
+  /* MOBILE */
+  @media ((min-width: 320px) and (max-width: 540px)) {
+    .section {
+      padding: 0;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #eee;
+      margin-top: 50px;
+    }
+  
+    .section_title {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .section_title > h3 {
+      font-size: 0.9rem;
+    }
+  
+    #navbar li {
+      font-size: 0.1rem;
+      margin: 3px;
+    }
+  
+    #navbar a:link,
+    #navbar a:visited,
+    #navbar a:hover,
+    #navbar a:active {
+      font-size: 0.9rem;
+      transform: none;
+    }
+  
+    #lakgautam h1 {
+      font-size: 2.0rem;
+    }
+  
+    #hero img {
+      height: 300px;
+    }
+  
+  
+    .grid-container-me {
+      width: 80%;
+      padding: 40px;
+      padding-bottom: 10px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    #about-me {
+      border-bottom: 1px solid #eee;
+    }
+  
+    #about-me--txt1,
+    #about-me--txt2,
+    #about-me--txt3 {
+      text-align: justify;
+      font-size: 0.9rem !important;
+    }
+  
+    #about-me--txt3 {
+      border-bottom: none;
+    }
+  
+    .grid-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    #skills {
+      border-top: none;
+    }
+  
+    #skills .txt-section h4 {
+      font-size: 2rem;
+    }
+  
+    #skills .txt-section p {
+      font-size: 1rem;
+      letter-spacing: 0;
+    }
+  
+    #education {
+      margin-bottom: 50px;
+      padding-bottom: 40px;
+      border: none;
+      border-bottom: 1px solid #eee;
+    }
+  
+    .flex-container-education {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+    }
+  
+    .school-card > img {
+      object-fit: cover;
+      width: 300px;
+      margin: 0 auto;
+      margin-bottom: 30px;
+      /* display: none; */
+    }
+  
+    .school-card {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      border: none;
+      text-align: center;
+    }
+  
+    #contact {
+      border-top: none;
+      margin-bottom: 50px;
+    }
+  
+    #footer p {
+      font-size: 0.8rem;
+    }
+  }
+
+.btn {
+    background-image: linear-gradient(to bottom, #03942e, #059f1a);
+    border-radius: 8px;
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    text-align: center;
+    margin: 10px 20px;
+    
+    
+}
+
+
